@@ -13,7 +13,7 @@ func main() {
 	message := flag.String("m", "", "message")
 	flag.Parse()
 
-	if len(flag.Args()) <= 0 {
+	if len(os.Args) <= 1 {
 		flag.Usage()
 		os.Exit(0)
 	}
